@@ -5,7 +5,7 @@ import google.generativeai as genai
 from pdfminer.high_level import extract_text
 
 def gemini_get(prompt, model="gemini-2.0-flash"):
-    GENAI_API_KEY = "AIzaSyAkbEE0b7IUYFR3jxt5LQwN645pYHivj1Y" # TODO: Set api key to env/config file
+    GENAI_API_KEY = "AIzaSyAkbEE0b7IUYFR3jxt5LQwN645pYHivj1y" # TODO: Set api key to env/config file
     genai.configure(api_key=GENAI_API_KEY)
     model = genai.GenerativeModel(model)
     response = model.generate_content(prompt)
